@@ -10,5 +10,5 @@ def call(body) {
     body()
 
     Yaml parser = new Yaml()
-    return parser.load(config.text)
+    return parser.load((config.filePath as File).text)
 }
