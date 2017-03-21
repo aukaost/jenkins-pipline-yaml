@@ -10,6 +10,5 @@ def call(body) {
     body()
 
     Yaml parser = new Yaml()
-    println config.content
-    return parser.load(config.content.toString())
+    return parser.load(config.content)
 }
